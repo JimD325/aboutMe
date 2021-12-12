@@ -1,0 +1,23 @@
+p {
+  text-emphasis-color: green;
+  margin: auto;
+  border: 2px solid green;
+  margin: 10 px;
+  padding: 20px;
+  background-color: darkgreen;
+  width: 800px;
+  color:blanchedalmond;
+  
+}
+body {
+  color:blanchedalmond;
+  width: 85%;
+  background-color: rgb(54, 54, 54);
+  
+}
+
+h2 {
+  width: 85%;
+  background-color: rgb(54, 54, 54);
+  color:blanchedalmond;
+}
