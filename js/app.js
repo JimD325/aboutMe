@@ -39,24 +39,31 @@ function bbq(){
 }
 bbq();
 //console.log(bbq)
-let vet = prompt('Am I a veteran?').toLowerCase();
-if (vet === 'yes' || vet === 'y'){
-  alert(congrats);
-  totalRight = totalRight +1;
+function vet(){
+  let vet = prompt('Am I a veteran?').toLowerCase();
+  if (vet === 'yes' || vet === 'y'){
+    alert(congrats);
+    totalRight = totalRight +1;
+  }
+  else {
+    alert(wrong);
+  }
 }
-else {
-  alert(wrong);
-}
+vet();
 //console.log(vet)
-let choc = prompt('Do I like chocolate?').toLowerCase();
-if(choc === 'no' || choc === 'n'){
-  alert (congrats);
-  totalRight = totalRight +1;
-}
-else {
-  alert (wrong);
-}
+function choc(){
+  let choc = prompt('Do I like chocolate?').toLowerCase();
+  if(choc === 'no' || choc === 'n'){
+    alert (congrats);
+    totalRight = totalRight +1;
+  }
+  else {
+    alert (wrong);
+  }
 //console.log(choc)
+}
+choc();
+
 let hike = prompt('Do I like to hike?').toLowerCase();
 if (hike === 'yes' || hike === 'y'){
   alert (congrats);
