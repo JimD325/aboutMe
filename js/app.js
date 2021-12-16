@@ -1,13 +1,16 @@
 'use strict';
 
-
-let username =prompt( 'Hello! my name is Jim, what is your name?' ); // getting their name
+function userName(); {
+let userName =prompt( 'Hello! my name is Jim, what is your name?' ); // getting their name
 //console.log(username)
-alert ('Hello ' + username + ' it is a pleasure to meet you!');
+alert ('Hello ' + userName + ' it is a pleasure to meet you!');
+}
+userName();
 
 let congrats = 'correct!';
 let wrong = 'incorrect =('; // right/wrong responses to questions
 let totalRight = 0; //will count up the number of correct answers
+
 
 let dogs = prompt('Now we can start with some basic facts about me. Yes or no, do you think I like dogs?').toLowerCase(); // using prompt and toLowerCase methods to remove case sensitivity for users input to the question.
 //console.log(dogs)
