@@ -63,16 +63,17 @@ function choc(){
 //console.log(choc)
 }
 choc();
-
-let hike = prompt('Do I like to hike?').toLowerCase();
-if (hike === 'yes' || hike === 'y'){
-  alert (congrats);
-  totalRight = totalRight +1;
+function hike(){
+  let hike = prompt('Do I like to hike?').toLowerCase();
+  if (hike === 'yes' || hike === 'y'){
+    alert (congrats);
+    totalRight = totalRight +1;
+  }
+  else {
+    alert (wrong);
+  }
 }
-else {
-  alert (wrong);
-}
-
+hike();
 
 
 for ( let i = 0; i < 4; i++){
