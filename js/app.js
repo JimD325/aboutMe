@@ -1,9 +1,9 @@
 'use strict';
 
-function userName(); {
-let userName =prompt( 'Hello! my name is Jim, what is your name?' ); // getting their name
-//console.log(username)
-alert ('Hello ' + userName + ' it is a pleasure to meet you!');
+function userName(){
+  let userName =prompt( 'Hello! my name is Jim, what is your name?' ); // getting their name
+  //console.log(username)
+  alert ('Hello ' + userName + ' it is a pleasure to meet you!');
 }
 userName();
 
@@ -11,31 +11,33 @@ let congrats = 'correct!';
 let wrong = 'incorrect =('; // right/wrong responses to questions
 let totalRight = 0; //will count up the number of correct answers
 
-function dogs();{
-let dogs = prompt('Now we can start with some basic facts about me. Yes or no, do you think I like dogs?').toLowerCase(); // using prompt and toLowerCase methods to remove case sensitivity for users input to the question.
-//console.log(dogs)
+function dogs(){
+  let dogs = prompt('Now we can start with some basic facts about me. Yes or no, do you think I like dogs?').toLowerCase(); // using prompt and toLowerCase methods to remove case sensitivity for users input to the question.
+  //console.log(dogs)
 
-if (dogs === 'yes' || dogs === 'y') {
-//console.log(congrats)
-  alert(congrats);
-  totalRight = totalRight +1; //adds one to the number of correct answers
-}
-else {
-//console.log(wrong)
-  alert(wrong);
-}
+  if (dogs === 'yes' || dogs === 'y') {
+  //console.log(congrats)
+    alert(congrats);
+    totalRight = totalRight +1; //adds one to the number of correct answers
+  }
+  else {
+  //console.log(wrong)
+    alert(wrong);
+  }
 }
 dogs();
 
-
-let bbq = prompt('Do I enjoy barbeque?').toLowerCase();
-if (bbq === 'yes' || bbq === 'y') {
-  alert(congrats);
-  totalRight = totalRight +1;
+function bbq(){
+  let bbq = prompt('Do I enjoy barbeque?').toLowerCase();
+  if (bbq === 'yes' || bbq === 'y') {
+    alert(congrats);
+    totalRight = totalRight +1;
+  }
+  else {
+    alert(wrong);
+  }
 }
-else {
-  alert(wrong);
-}
+bbq();
 //console.log(bbq)
 let vet = prompt('Am I a veteran?').toLowerCase();
 if (vet === 'yes' || vet === 'y'){
