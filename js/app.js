@@ -75,25 +75,28 @@ function hike(){
 }
 hike();
 
-
-for ( let i = 0; i < 4; i++){
-  let numguess = prompt('What number am I thinking of between 1 and 10?'); //always returns a string instead of a number, use parseint
-  numguess = parseInt(numguess); // can use console.log(typeofnumguess); to get data type
-  if (numguess >= 5){
-    alert ('too high!');
-  }
-  else if (numguess <= 3){
-    alert ('too low!');
-  }
-  else if (numguess === 4){
-    alert ('correct!');
-    totalRight = totalRight +1;
-    break;
-  }
-  if (i === 3){
-    alert ('I was thinking of four, we can get it next time');
+function numGuess(){
+  for ( let i = 0; i < 4; i++){
+    let numguess = prompt('What number am I thinking of between 1 and 10?'); //always returns a string instead of a number, use parseint
+    numguess = parseInt(numguess); // can use console.log(typeofnumguess); to get data type
+    if (numguess >= 5){
+      alert ('too high!');
+    }
+    else if (numguess <= 3){
+      alert ('too low!');
+    }
+    else if (numguess === 4){
+      alert ('correct!');
+      totalRight = totalRight +1;
+      break;
+    }
+    if (i === 3){
+      alert ('I was thinking of four, we can get it next time');
+    }
   }
 }
+numGuess();
+
 let favFoods = ['cookies', 'steak', 'bacon']; //creating foods array
 // could change into a while (atemptsRemain && !answered correctly) loop similar to the class 03 review arrays replit https://replit.com/@rkgallaway/201-class-03-review-arrays-and-loops#index.js
 let correctAnswer = false;
