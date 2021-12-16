@@ -11,7 +11,7 @@ let congrats = 'correct!';
 let wrong = 'incorrect =('; // right/wrong responses to questions
 let totalRight = 0; //will count up the number of correct answers
 
-
+function dogs();{
 let dogs = prompt('Now we can start with some basic facts about me. Yes or no, do you think I like dogs?').toLowerCase(); // using prompt and toLowerCase methods to remove case sensitivity for users input to the question.
 //console.log(dogs)
 
@@ -24,6 +24,9 @@ else {
 //console.log(wrong)
   alert(wrong);
 }
+}
+dogs();
+
 
 let bbq = prompt('Do I enjoy barbeque?').toLowerCase();
 if (bbq === 'yes' || bbq === 'y') {
